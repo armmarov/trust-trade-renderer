@@ -3,7 +3,7 @@ import { AirwayBillTemplate } from "./template";
 export const templates = [
   {
     id: "airwaybill",
-    label: "AirwayBill",
+    label: "Air Waybill",
     template: AirwayBillTemplate,
   },
 ];

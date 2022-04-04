@@ -6,5 +6,5 @@ import { CustomTemplateCertificate } from "./samples";
 import { templates as AirwayBillTemplate } from "./airwayTemplate";
 
 export const registry: TemplateRegistry<any> = {
-  AirwayBill: AirwayBillTemplate
+  AIRWAYBILL_GENERIC: AirwayBillTemplate
 };
