@@ -2,15 +2,18 @@ import { IAirwayBill } from "./airwaybill";
 import { v2 } from "@govtechsg/open-attestation";
 
 export const datasource: IAirwayBill = {
-  name: "John Doe",
-  institute: "Institute of John Doe",
   issuers: [
     {
-      name: "institute of blockchain"
+      identityProof: {
+        type: v2.IdentityProofType.DNSTxt,
+        location: "doc.rinkeby.armmarov.com"
+    },
+    name: "Smart Tradzt",
+    documentStore: "0xF1ae5954E5994C87e014bC897681f2F7C628B3E6"
     }
   ],
   $template: {
-    name: "custom",
+    name: "AIRWAYBILL_GENERIC",
     type: v2.TemplateType.EmbeddedRenderer,
     url: "http://localhost:3000"
   },

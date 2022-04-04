@@ -1,8 +1,6 @@
 import { v2 } from "@govtechsg/open-attestation";
 
 export interface IAirwayBill extends v2.OpenAttestationDocument {
-  name: string;
-  institute: string;
   content?: {
     id?: string;
     issuedBy?: string;
