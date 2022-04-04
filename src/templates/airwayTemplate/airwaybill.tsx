@@ -1,0 +1,54 @@
+import { v2 } from "@govtechsg/open-attestation";
+
+export interface IAirwayBill extends v2.OpenAttestationDocument {
+  name: string;
+  institute: string;
+  content?: {
+    id?: string;
+    issuedBy?: string;
+    shipperName?: string;
+    shipperAccount?: string;
+    shipperAddress?: string;
+    consigneeName?: string;
+    consigneeAccount?: string;
+    consigneeAddress?: string;
+    issuingCarrierAgentName?: string;
+    issuingCarrierAgentCity?: string;
+    agentIATACode?: string;
+    accountNo?: string;
+    airportDeparture?: string;
+    requestedRouting?: string;
+    airportDestination?: string;
+    flightDate?: string;
+    insuranceAmount?: string;
+    handlingInformation?:string;
+    piecesNo?: string;
+    grossWeight?: string;
+    commodityItemNo?: string;
+    chargeableWeight?: string;
+    rateCharge?: string;
+    total?: string;
+    qualityOfGoods?: string;
+    weightChargePrepaid?: string;
+    weightChargeCollect?: string;
+    valuationChargePrepaid?: string;
+    valuationChargeCollect?: string;
+    taxPrepaid?: string;
+    taxCollect?: string;
+    totalOtherChargesDueAgentPrepaid?: string;
+    totalOtherChargesDueAgentCollect?: string;
+    totalOtherChargeDueCarrierPrepaid?: string;
+    totalOtherChargeDueCarrierCollect?: string;
+    totalPrepaid?: string;
+    totalCollect?: string;
+    currencyConversionRates?: string;
+    ccChargesInDestCurrency?: string;
+    otherCharges?: string;
+    currency?: string;
+    chgsCode?: string;
+    natureOfGoods?: string;
+    sign?: string;
+    signDate?: string;
+  };
+  $template: v2.TemplateObject;
+}
